@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(231, 113, 113, 0.445);
+    margin: 0px;
+}
+header{
+    background-color: rgb(90, 128, 83);
+    height: 200px;
+    text-align: center;
+    margin: 10px;
+
+}
+h1{
+    padding-top: 40px;
+
+}
+main{
+    background-color: rgb(209, 230, 230);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px 0px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.438);
+}
+article{
+background-color: blueviolet;
+padding: 5px;
+}
+article > aside{
+    background-color: rgb(200, 161, 236);
+
+}
+nav{
+    background-color: rgba(27, 26, 24, 0.171);
+    padding: 3px;
+    box-shadow: 2px 2px 2px black;
+}
+nav > a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    margin-right: 30px;
+}
+nav > a:hover{
+    color: brown;
+    text-decoration: underline;
+}
+footer{
+    background-color: black;
+    color: yellowgreen;
+    text-align: center;
+    padding: 6px;
+}
+
+footer > p{
+margin: 0px;
+
+}
+section{
+    background-color: rgb(119, 115, 115);
+}
+div#bola{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: white;
+    margin: 20px;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+    <nav>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+    </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <p>politica e tecnologia</p>
+        </section>
+<section id="noticias">
+    <article>
+        <h2>noticias sobre brasil</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro suscipit tempore, commodi vel doloremque sequi assumenda aspernatur deleniti provident architecto, nostrum nobis ea itaque debitis impedit tenetur rem quos placeat.</p>
+        <aside>
+        <p>artigo escrito por jose da silva</p>
+        </aside>
+    </article>
+  <article>
+
+  </article>
+</section>
+    </main>
+    <footer>
+         <p>desenvolvido por curso em video</p>
+
+    </footer>
+    <div id="bola"></div>
+    
+</body>
+</html>

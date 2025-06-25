@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+        SELETORES PERSONALIZADOS
+        #  = id
+        .  = class
+        :  = pseudo-class
+        :: = pseudo-element
+        >  = children
+        */
+body{
+    font-family: 'Courier New', Courier, monospace;
+}
+a{
+color: red;
+text-decoration: none;
+font-weight: bold;
+}
+a:visited{
+color:darkred
+}
+a:hover{
+color: black;
+text-decoration: underline;
+}
+a:active{
+    color:yellow ;
+}
+.especial{
+    background-color: rgb(255,140,140)
+
+}
+.especial::before{
+content: '⮕';
+}
+.especial::after{
+content: '⬅';
+}
+
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+<li>
+    <a href="https://draft5.gg/campeonato/1798-BLAST.tv-Austin-Major-2025" target="_blank">Camp Cs</a>
+</li>
+<li>
+    <a href="https://gamersclub.gg/valorant?utm_source=ie_globalnavbar&utm_medium=ie_btn_D5" target="_blank" class="especial">Camp Valorant</a>
+</li>
+<li>
+    <a href="https://gamersclub.gg/lol?utm_source=ie_globalnavbar&utm_medium=ie_btn_D5" target="_blank">Camp Lol</a>
+</li>
+    </ul>
+    
+</body>
+</html>
