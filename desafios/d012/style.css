@@ -68,7 +68,7 @@ main p {
 }
 
 section div.parallax  >p {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.301);
     color: white;
     width: 43vw;
     padding: 10px 0px 0px 5px;
@@ -77,22 +77,24 @@ section div.parallax  >p {
 }
 
 section div.parallax {
-    background: black url(imagens/background001.jpg) center center no-repeat fixed;
+    background: black url(imagens/background001.jpg) right center no-repeat fixed;
     background-size: cover;
     padding: 20px 0px;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.315);
 }
 
 section.parallax2 {
     background: black url(imagens/background002.jpg) center center no-repeat fixed;
     background-size: cover;
     padding: 20px 0px;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.315);
 
 }
 
 section.parallax2>p {
     color: white;
     text-shadow: 1px 1px 1px black;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.301);
     padding: 10px 0px 0px 5px;
     width: 43vw;
 
