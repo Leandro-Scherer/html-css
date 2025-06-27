@@ -36,7 +36,7 @@ header h1 {
     color: white;
     font-size: 9vw;
     padding: 50px 0px 0px 0px;
-    text-transform: uppercase;
+    font-variant: small-caps;
 
 }
 
