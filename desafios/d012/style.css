@@ -1,0 +1,117 @@
+@charset "UTF-8";
+
+
+@font-face {
+    font-family: 'Passion-One';
+    src: url(fontes/Passion_One/PassionOne-Bold.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Sriracha';
+    src: url(fontes/Sriracha/Sriracha-Regular.ttf) format('truetype');
+
+}
+
+body {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: black;
+    width: 100%;
+    padding: 0px 0px 50px 0px;
+
+}
+
+header h1,
+header p {
+    margin: 0;
+    text-align: center;
+}
+
+header h1 {
+    font-family: 'Passion-One', cursive;
+    color: white;
+    font-size: 9vw;
+    padding: 50px 0px 0px 0px;
+
+}
+
+header p {
+    font-family: verdana;
+    color: white;
+    padding: 10px 0px 0px 0px;
+
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+main p {
+    font-family: 'Sriracha', cursive;
+    font-size: clamp(1.1rem, 3.4vw, 5rem);
+    line-height: 2.1em;
+    margin: 60px 0px 0px 30px;
+    padding: 0px 0px 120px 0px;
+    font-weight: normal;
+    font-style: normal;
+}
+
+section div.parallax  >p {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    width: 43vw;
+    padding: 10px 0px 0px 5px;
+
+
+}
+
+section div.parallax {
+    background: black url(imagens/background001.jpg) center center no-repeat fixed;
+    background-size: cover;
+    padding: 20px 0px;
+}
+
+section.parallax2 {
+    background: black url(imagens/background002.jpg) center center no-repeat fixed;
+    background-size: cover;
+    padding: 20px 0px;
+
+}
+
+section.parallax2>p {
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 0px 0px 5px;
+    width: 43vw;
+
+
+}
+
+footer {
+    font-family: Verdana;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 13px 0px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
