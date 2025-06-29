@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        td,
+        th {
+            border: 1px solid rgba(0, 0, 0, 0.829);
+            padding: 9px;
+        }
+
+        thead,
+        tfoot {
+            background-color: rgba(0, 0, 0, 0.863);
+            color: white;
+        }
+        thead > tr > th{
+            position: sticky;
+            background-color: rgb(0, 0, 0);
+            top: -1px;
+
+        }
+         tbody > tr:nth-child(odd){ /* 2n-1 */
+            background-color: rgb(224, 54, 54);
+            font-weight: bold;
+         }
+        tbody > tr:nth-child(even){ /*  2n  */
+            background-color: rgb(0, 255, 21);
+        }
+        
+
+        td.numero {
+            text-align: right;
+        }
+        caption{
+        background-color: lightgray;
+        padding: 10px;
+        font-weight: bold;
+        font-size: 1.5em;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--
+    ANATOMIA PARA TABELAS GRANDES
+     TABLE
+         CAPTION
+         THEAD
+            tr,td,th
+         TBODY
+            tr,td,th
+         TFOOT
+            tr,td,th
+    -->
+</body>
+<table>
+    <caption>População das Unidades Federativas</caption>
+    <thead>
+        <tr>
+            <th scope="col">Estado</th>
+            <th scope="col" style="width: 50px;">População</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Acre</td>
+            <td class="numero">830.018</td>
+        </tr>
+        <tr>
+            <td>Alagoas</td>
+            <td class="numero">3.127.511</td>
+        </tr>
+        <tr>
+            <td>Amapá</td>
+            <td class="numero">733.508</td>
+        </tr>
+        <tr>
+            <td>Amazonas</td>
+            <td class="numero">3.941.613</td>
+        </tr>
+        <tr>
+            <td>Bahia</td>
+            <td class="numero">14.136.417</td>
+        </tr>
+        <tr>
+            <td>Ceará</td>
+            <td class="numero">8.867.448</td>
+        </tr>
+        <tr>
+            <td>Distrito Federal</td>
+            <td class="numero">3.094.325</td>
+        </tr>
+        <tr>
+            <td>Espírito Santo</td>
+            <td class="numero">4.108.508</td>
+        </tr>
+        <tr>
+            <td>Goiás</td>
+            <td class="numero">7.056.495</td>
+        </tr>
+        <tr>
+            <td>Maranhão</td>
+            <td class="numero">6.775.152</td>
+        </tr>
+        <tr>
+            <td>Mato Grosso</td>
+            <td class="numero">3.658.649</td>
+        </tr>
+        <tr>
+            <td>Mato Grosso do Sul</td>
+            <td class="numero">2.833.742</td>
+        </tr>
+        <tr>
+            <td>Minas Gerais</td>
+            <td class="numero">20.732.660</td>
+        </tr>
+        <tr>
+            <td>Pará</td>
+            <td class="numero">8.442.962</td>
+        </tr>
+        <tr>
+            <td>Paraíba</td>
+            <td class="numero">3.974.687</td>
+        </tr>
+        <tr>
+            <td>Paraná</td>
+            <td class="numero">11.835.379</td>
+        </tr>
+        <tr>
+            <td>Pernambuco</td>
+            <td class="numero">9.058.155</td>
+        </tr>
+        <tr>
+            <td>Piauí</td>
+            <td class="numero">3.269.200</td>
+        </tr>
+        <tr>
+            <td>Rio de Janeiro</td>
+            <td class="numero">16.054.524</td>
+        </tr>
+        <tr>
+            <td>Rio Grande do Norte</td>
+            <td class="numero">3.302.729</td>
+        </tr>
+        <tr>
+            <td>Rio Grande do Sul</td>
+            <td class="numero">10.880.506</td>
+        </tr>
+        <tr>
+            <td>Rondônia</td>
+            <td class="numero">1.581.196</td>
+        </tr>
+        <tr>
+            <td>Roraima</td>
+            <td class="numero">636.707</td>
+        </tr>
+        <tr>
+            <td>Santa Catarina</td>
+            <td class="numero">7.762.154</td>
+        </tr>
+        <tr>
+            <td>São Paulo</td>
+            <td class="numero">44.411.238</td>
+        </tr>
+        <tr>
+            <td>Sergipe</td>
+            <td class="numero">2.209.558</td>
+        </tr>
+        <tr>
+            <td>Tocantins</td>
+            <td class="numero">1.511.460</td>
+        </tr>
+
+    </tbody>
+    <tfoot>
+        <tr>
+            <th scope="row">Total de habitantes</th>
+            <td class="numero"><strong>212 583 750</strong></td>
+        </tr>
+    </tfoot>
+</table>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et nemo quas porro. Optio distinctio nemo ipsa accusantium sint deleniti beatae aliquam qui enim id, nulla rem, odit nihil laudantium. Praesentium. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla aliquam voluptates quisquam libero accusamus ullam, sed nam voluptas omnis earum quis et quo commodi voluptatem sapiente facere quaerat cum. A? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt rem alias ipsa tenetur facere, sapiente beatae harum animi nemo porro eveniet optio sequi aut facilis voluptate explicabo ea, ullam sit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quia earum officia magni, doloribus magnam neque voluptatem temporibus deserunt quas esse error libero? Omnis provident rerum facere beatae blanditiis sunt. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores debitis nihil fuga quis iste rem? Magni facilis reprehenderit dolor, pariatur nulla atque molestias. Aliquid, quibusdam odio? Similique totam harum beatae?</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et nemo quas porro. Optio distinctio nemo ipsa accusantium sint deleniti beatae aliquam qui enim id, nulla rem, odit nihil laudantium. Praesentium. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla aliquam voluptates quisquam libero accusamus ullam, sed nam voluptas omnis earum quis et quo commodi voluptatem sapiente facere quaerat cum. A? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt rem alias ipsa tenetur facere, sapiente beatae harum animi nemo porro eveniet optio sequi aut facilis voluptate explicabo ea, ullam sit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quia earum officia magni, doloribus magnam neque voluptatem temporibus deserunt quas esse error libero? Omnis provident rerum facere beatae blanditiis sunt. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores debitis nihil fuga quis iste rem? Magni facilis reprehenderit dolor, pariatur nulla atque molestias. Aliquid, quibusdam odio? Similique totam harum beatae?</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et nemo quas porro. Optio distinctio nemo ipsa accusantium sint deleniti beatae aliquam qui enim id, nulla rem, odit nihil laudantium. Praesentium. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla aliquam voluptates quisquam libero accusamus ullam, sed nam voluptas omnis earum quis et quo commodi voluptatem sapiente facere quaerat cum. A? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt rem alias ipsa tenetur facere, sapiente beatae harum animi nemo porro eveniet optio sequi aut facilis voluptate explicabo ea, ullam sit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quia earum officia magni, doloribus magnam neque voluptatem temporibus deserunt quas esse error libero? Omnis provident rerum facere beatae blanditiis sunt. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores debitis nihil fuga quis iste rem? Magni facilis reprehenderit dolor, pariatur nulla atque molestias. Aliquid, quibusdam odio? Similique totam harum beatae?</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et nemo quas porro. Optio distinctio nemo ipsa accusantium sint deleniti beatae aliquam qui enim id, nulla rem, odit nihil laudantium. Praesentium. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla aliquam voluptates quisquam libero accusamus ullam, sed nam voluptas omnis earum quis et quo commodi voluptatem sapiente facere quaerat cum. A? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt rem alias ipsa tenetur facere, sapiente beatae harum animi nemo porro eveniet optio sequi aut facilis voluptate explicabo ea, ullam sit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quia earum officia magni, doloribus magnam neque voluptatem temporibus deserunt quas esse error libero? Omnis provident rerum facere beatae blanditiis sunt. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores debitis nihil fuga quis iste rem? Magni facilis reprehenderit dolor, pariatur nulla atque molestias. Aliquid, quibusdam odio? Similique totam harum beatae?</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et nemo quas porro. Optio distinctio nemo ipsa accusantium sint deleniti beatae aliquam qui enim id, nulla rem, odit nihil laudantium. Praesentium. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla aliquam voluptates quisquam libero accusamus ullam, sed nam voluptas omnis earum quis et quo commodi voluptatem sapiente facere quaerat cum. A? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt rem alias ipsa tenetur facere, sapiente beatae harum animi nemo porro eveniet optio sequi aut facilis voluptate explicabo ea, ullam sit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quia earum officia magni, doloribus magnam neque voluptatem temporibus deserunt quas esse error libero? Omnis provident rerum facere beatae blanditiis sunt. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores debitis nihil fuga quis iste rem? Magni facilis reprehenderit dolor, pariatur nulla atque molestias. Aliquid, quibusdam odio? Similique totam harum beatae?</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et nemo quas porro. Optio distinctio nemo ipsa accusantium sint deleniti beatae aliquam qui enim id, nulla rem, odit nihil laudantium. Praesentium. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla aliquam voluptates quisquam libero accusamus ullam, sed nam voluptas omnis earum quis et quo commodi voluptatem sapiente facere quaerat cum. A? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt rem alias ipsa tenetur facere, sapiente beatae harum animi nemo porro eveniet optio sequi aut facilis voluptate explicabo ea, ullam sit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quia earum officia magni, doloribus magnam neque voluptatem temporibus deserunt quas esse error libero? Omnis provident rerum facere beatae blanditiis sunt. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores debitis nihil fuga quis iste rem? Magni facilis reprehenderit dolor, pariatur nulla atque molestias. Aliquid, quibusdam odio? Similique totam harum beatae?</p>
+
+</html>
