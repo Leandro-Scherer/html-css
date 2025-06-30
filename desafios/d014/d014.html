@@ -65,10 +65,10 @@
         <caption> Média dos Alunos</caption>
         <thead>
             <tr>
-                <th rowspan="2">Área</th>
-                <th rowspan="2">Disciplinas</th>
-                <th colspan="2">Notas</th>
-                <th rowspan="2">Média</th>
+                <th rowspan="2" scope="rowgroup">Área</th>
+                <th rowspan="2" scope="rowgroup">Disciplinas</th>
+                <th colspan="2" scope="rowgroup">Notas</th>
+                <th rowspan="2" scope="rowgroup">Média</th>
             </tr>
             <tr>
                 <th>Nota 1</th>
@@ -102,11 +102,11 @@
                 <td class="dado">9</td>
             </tr>
             <tr>
-                <th colspan="4" class="mediatotal">Média de exatas</th>
+                <th colspan="4" class="mediatotal" scope="colgroup">Média de exatas</th>
                 <td class="mediavalor">8</td>
             </tr>
             <tr>
-                <th rowspan="2">Humanas</th>
+                <th rowspan="2" scope="rowgroup">Humanas</th>
                 <td>História</td>
                 <td class="dado">5</td>
                 <td class="dado">7</td>
@@ -119,7 +119,7 @@
                 <td class="dado">5</td>
             </tr>
                <tr>
-                <th colspan="4" class="mediatotal">Média de Humanas</th>
+                <th colspan="4" class="mediatotal" scope="colgroup">Média de Humanas</th>
                 <td class="mediavalor">4</td>
             </tr>
 
