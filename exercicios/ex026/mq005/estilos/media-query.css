@@ -8,17 +8,20 @@ Laptops/Desktops:      992px até 1199px
 Grandes telas/Monitores 4K: 1200px ou mais
 */
 
-@media screen and (min-width:768px){
-    span#burguer{
+@media screen and (min-width:768px) {
+    span#burguer {
         display: none;
     }
-    menu{
+
+    menu {
         display: block;
     }
-    menu li{
-        display: inline-block;   
+
+    menu li {
+        display: inline-block;
     }
-    main{
+
+    main {
         width: 768px;
     }
 }
