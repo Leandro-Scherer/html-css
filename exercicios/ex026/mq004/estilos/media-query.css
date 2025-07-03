@@ -1,0 +1,124 @@
+@charset "UTF-8";
+/* Todas as Demais Mídias */
+
+/* Typical Device Breakpoints - Atualizado 2025
+-----------------------------------------------
+Pequenas telas:        até 480px
+Celulares:             481px até 767px
+Tablets:               768px até 991px
+Laptops/Desktops:      992px até 1199px
+Grandes telas/Monitores 4K: 1200px ou mais
+*/
+@media print {
+
+    /* IMPRESSÃO */
+    * {
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    body {
+        background-image: url(../imagens/icon-print.png);
+        /* Desnecessário */
+    }
+
+    main {
+        width: 90vw;
+        border: 2px solid black;
+    }
+
+    main::after {
+        content: 'Essa impressão foi feita atraves do www.cursoemvideo.com';
+        text-decoration: overline;
+    }
+
+    main h1 {
+        text-shadow: none;
+        color: black;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:991px) {   /* TABLET */
+
+   
+   
+    body {
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+
+    img#phone {
+        display: none;
+    }
+
+    img#tv {
+        display: none;
+    }
+
+    img#print {
+        display: none;
+    }
+
+    img#tablet {
+        display: block;
+    }
+
+    img#pc {
+        display: none;
+    }
+}
+
+
+@media screen and (min-width:992px) and (max-width:1199px) { /* DEKSTOP */
+
+    
+    body {
+        background-image: url(../imagens/back-pc.jpg);
+    }
+
+    img#phone {
+        display: none;
+    }
+
+    img#tv {
+        display: none;
+    }
+
+    img#print {
+        display: none;
+    }
+
+    img#tablet {
+        display: none;
+    }
+
+    img#pc {
+        display: block;
+    }
+}
+
+@media screen and (min-width:1200px) {  /* GRANDES TELAS */
+
+   
+    body {
+        background-image: url(../imagens/back-tv.jpg);
+    }
+
+    img#phone {
+        display: none;
+    }
+
+    img#tv {
+        display: block;
+    }
+
+    img#print {
+        display: none;
+    }
+
+    img#tablet {
+        display: none;
+    }
+
+    img#pc {
+        display: none;
+    }
+}
