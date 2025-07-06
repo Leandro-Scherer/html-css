@@ -46,6 +46,7 @@ Grandes telas/Monitores 4K: 1200px ou mais
 
     section#login {
         width: 950px;
+        height: 350px;
     }
 
     section#login>div#imagem {
